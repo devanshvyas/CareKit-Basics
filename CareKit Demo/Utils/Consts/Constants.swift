@@ -55,5 +55,7 @@ struct TabBarConstants {
   let weightAlertMessage = "Current weight(in Kg):"
   let weightUnit = "Kgs"
 
+  //MARK: Insights
+  let insightVCTitle = "Insights"
 }
 
