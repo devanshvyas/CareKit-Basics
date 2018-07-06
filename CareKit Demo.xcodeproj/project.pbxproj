@@ -7,17 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0559C51920EF3A1000D5B883 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0559C51620EF3A0000D5B883 /* CareKit.framework */; };
+		0559C51A20EF3A1000D5B883 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0559C51620EF3A0000D5B883 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0559C51F20EF3E8F00D5B883 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0559C51E20EF3E8F00D5B883 /* TabBarController.swift */; };
+		0559C52220EF435B00D5B883 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0559C52120EF435B00D5B883 /* Constants.swift */; };
 		05EF0D2B20EF201D0087BFA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF0D2A20EF201D0087BFA9 /* AppDelegate.swift */; };
-		05EF0D2D20EF201D0087BFA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF0D2C20EF201D0087BFA9 /* ViewController.swift */; };
 		05EF0D3020EF201D0087BFA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05EF0D2E20EF201D0087BFA9 /* Main.storyboard */; };
 		05EF0D3220EF20230087BFA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05EF0D3120EF20230087BFA9 /* Assets.xcassets */; };
 		05EF0D3520EF20230087BFA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05EF0D3320EF20230087BFA9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0559C51520EF3A0000D5B883 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0559C50F20EF3A0000D5B883 /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		0559C51720EF3A0000D5B883 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0559C50F20EF3A0000D5B883 /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
+			remoteInfo = CareKitTests;
+		};
+		0559C51B20EF3A1000D5B883 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0559C50F20EF3A0000D5B883 /* CareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0559C51D20EF3A1000D5B883 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0559C51A20EF3A1000D5B883 /* CareKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0559C50F20EF3A0000D5B883 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = "../../../../../../../Downloads/CareKit-master/CareKit.xcodeproj"; sourceTree = "<group>"; };
+		0559C51E20EF3E8F00D5B883 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0559C52120EF435B00D5B883 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		05EF0D2720EF201D0087BFA9 /* CareKit Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CareKit Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05EF0D2A20EF201D0087BFA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		05EF0D2C20EF201D0087BFA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		05EF0D2F20EF201D0087BFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05EF0D3120EF20230087BFA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05EF0D3420EF20230087BFA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,12 +72,73 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0559C51920EF3A1000D5B883 /* CareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0559C50920EF394800D5B883 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0559C50B20EF398000D5B883 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				05EF0D2E20EF201D0087BFA9 /* Main.storyboard */,
+				05EF0D3320EF20230087BFA9 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0559C50C20EF398700D5B883 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				05EF0D2A20EF201D0087BFA9 /* AppDelegate.swift */,
+				0559C51E20EF3E8F00D5B883 /* TabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0559C50D20EF399200D5B883 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0559C52020EF433E00D5B883 /* Consts */,
+				05EF0D3120EF20230087BFA9 /* Assets.xcassets */,
+				0559C50E20EF399900D5B883 /* Services */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0559C50E20EF399900D5B883 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0559C50F20EF3A0000D5B883 /* CareKit.xcodeproj */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0559C51020EF3A0000D5B883 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0559C51620EF3A0000D5B883 /* CareKit.framework */,
+				0559C51820EF3A0000D5B883 /* CareKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0559C52020EF433E00D5B883 /* Consts */ = {
+			isa = PBXGroup;
+			children = (
+				0559C52120EF435B00D5B883 /* Constants.swift */,
+			);
+			path = Consts;
+			sourceTree = "<group>";
+		};
 		05EF0D1E20EF201D0087BFA9 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +158,10 @@
 		05EF0D2920EF201D0087BFA9 /* CareKit Demo */ = {
 			isa = PBXGroup;
 			children = (
-				05EF0D2A20EF201D0087BFA9 /* AppDelegate.swift */,
-				05EF0D2C20EF201D0087BFA9 /* ViewController.swift */,
-				05EF0D2E20EF201D0087BFA9 /* Main.storyboard */,
-				05EF0D3120EF20230087BFA9 /* Assets.xcassets */,
-				05EF0D3320EF20230087BFA9 /* LaunchScreen.storyboard */,
+				0559C50D20EF399200D5B883 /* Utils */,
+				0559C50C20EF398700D5B883 /* Controller */,
+				0559C50B20EF398000D5B883 /* View */,
+				0559C50920EF394800D5B883 /* Model */,
 				05EF0D3620EF20230087BFA9 /* Info.plist */,
 			);
 			path = "CareKit Demo";
@@ -74,10 +177,12 @@
 				05EF0D2320EF201D0087BFA9 /* Sources */,
 				05EF0D2420EF201D0087BFA9 /* Frameworks */,
 				05EF0D2520EF201D0087BFA9 /* Resources */,
+				0559C51D20EF3A1000D5B883 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0559C51C20EF3A1000D5B883 /* PBXTargetDependency */,
 			);
 			name = "CareKit Demo";
 			productName = "CareKit Demo";
@@ -110,12 +215,35 @@
 			mainGroup = 05EF0D1E20EF201D0087BFA9;
 			productRefGroup = 05EF0D2820EF201D0087BFA9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0559C51020EF3A0000D5B883 /* Products */;
+					ProjectRef = 0559C50F20EF3A0000D5B883 /* CareKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				05EF0D2620EF201D0087BFA9 /* CareKit Demo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0559C51620EF3A0000D5B883 /* CareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKit.framework;
+			remoteRef = 0559C51520EF3A0000D5B883 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0559C51820EF3A0000D5B883 /* CareKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitTests.xctest;
+			remoteRef = 0559C51720EF3A0000D5B883 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		05EF0D2520EF201D0087BFA9 /* Resources */ = {
@@ -135,12 +263,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05EF0D2D20EF201D0087BFA9 /* ViewController.swift in Sources */,
 				05EF0D2B20EF201D0087BFA9 /* AppDelegate.swift in Sources */,
+				0559C51F20EF3E8F00D5B883 /* TabBarController.swift in Sources */,
+				0559C52220EF435B00D5B883 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0559C51C20EF3A1000D5B883 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CareKit;
+			targetProxy = 0559C51B20EF3A1000D5B883 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		05EF0D2E20EF201D0087BFA9 /* Main.storyboard */ = {
@@ -282,6 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "CareKit Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,6 +437,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "CareKit Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
