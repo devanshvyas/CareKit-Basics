@@ -25,6 +25,7 @@ class TabBarController: UITabBarController {
   }()
 
   let activityStartDate = DateComponents(year: TabBarConstants().startYear , month: TabBarConstants().startMonth, day: TabBarConstants().startDay)
+  var contacts = [OCKContact]()
   
   //MARK: LifeCycle Methods
   override func viewDidLoad() {
@@ -34,7 +35,10 @@ class TabBarController: UITabBarController {
     let symtomsTrackerVC = OCKSymptomTrackerViewController(carePlanStore: carePlanStore)
     symtomsTrackerVC.title = obj.symtomsTrackerVCTitle
     symtomsTrackerVC.delegate = self
-    viewControllers = [UINavigationController(rootViewController: careCardVC), UINavigationController(rootViewController: symtomsTrackerVC)]
+    addContact()
+    let connectVC = OCKConnectViewController(contacts: contacts)
+    connectVC.title = "Connect"
+    viewControllers = [UINavigationController(rootViewController: careCardVC), UINavigationController(rootViewController: symtomsTrackerVC), UINavigationController(rootViewController: connectVC)]
     addActivity()
   }
   
@@ -70,6 +74,12 @@ class TabBarController: UITabBarController {
         }
       }
     }
+  }
+  
+  //MARK: connect
+  func addContact() {
+    let me = OCKContact(contactType: .careTeam, name: "Dev", relation: "I Me Myself", contactInfoItems: [.phone("8866327323"),.sms("8866327323"),.email("devansh.vyas@solutionanalysts.com")], tintColor: .red, monogram: nil, image: nil)
+    contacts = [me]
   }
   
 }
@@ -136,3 +146,4 @@ extension TabBarController: OCKSymptomTrackerViewControllerDelegate{
   }
   
 }
+
